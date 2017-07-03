@@ -1,0 +1,15 @@
+ 
+$o = New-Object -comobject outlook.application
+$n = $o.GetNamespace("MAPI")
+$f = $n.PickFolder()
+$filepath = "c:\temp"
+$f.Items| foreach {
+ $SendName = $_.SenderName
+ $_.attachments|foreach {
+Write-Host $_.filename
+ $a = $_.filename
+If ($a.Contains("xlsx")) {
+ $_.saveasfile((Join-Path $filepath "$SendName.xlsx"))
+ }
+}
+}
