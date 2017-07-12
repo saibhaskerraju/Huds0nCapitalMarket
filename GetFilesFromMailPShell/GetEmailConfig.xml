@@ -1,9 +1,9 @@
 <Data>
 		
-			<subject>FW: [EXTERNAL MAIL]: FW: ClearCapital_BPO_Daily_ETL</subject>
+			<subject>delete</subject>
 			<Destination>C:\Temp\</Destination>
 			<FileFilter>xlsx</FileFilter>
-
-
+			<searchfolder>Inbox</searchfolder>
+			<emailID>sai.chittapragada@prolifics.com</emailID>
 
 </Data>
