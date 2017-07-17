@@ -1,0 +1,21 @@
+
+<Data>
+		
+			<Server>10.0.71.77</Server>
+			<Database>TestDB</Database>
+			<Query>
+
+SELECT s.name [Schema_Name],
+o.name AS [Object_Name],
+o.type as [Type]
+ FROM   sys.all_objects o
+LEFT OUTER JOIN sys.schemas s
+ON o.schema_id = s.schema_id
+WHERE  (create_date > (GETDATE() - 7) OR modify_date > (GETDATE() - 7)) AND (o.type='U' or o.type='P')
+ORDER BY o.modify_date
+
+</Query>
+
+<ScriptLocation>E:\Ashfaq\SQLScripts</ScriptLocation>
+
+</Data>
