@@ -16,6 +16,6 @@ ORDER BY o.modify_date
 
 </Query>
 
-<ScriptLocation>E:\Ashfaq\SQLScripts</ScriptLocation>
+<ScriptLocation>SQLScripts</ScriptLocation>
 
 </Data>
