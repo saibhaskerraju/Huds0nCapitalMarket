@@ -155,7 +155,7 @@ namespace SBO_RepeatedColumns_Finder
                             
                         }
                     }
-                    if(Convert.ToBoolean(ConfigurationManager.AppSettings["clearFormats"].ToString()))
+                    if (Convert.ToBoolean(Convert.ToInt32( ConfigurationManager.AppSettings["clearFormats"].ToString())))
                         workSheet.UsedRange.ClearFormats();
 
                 }
